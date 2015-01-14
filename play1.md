@@ -92,47 +92,47 @@ Nous pouvons maintenant tester nos services. Pour celà, utilisez `curl` ou un p
 
 
 ```sh
-$ curl -X GET http://localhost:8080/Todo/api/tasks
+$ curl -X GET http://localhost:9000/api/tasks
 []
 ```
 
 ```sh
-$ curl -X POST -d 'name=Hello' http://localhost:8080/Todo/api/tasks
+$ curl -X POST -d 'name=Hello' http://localhost:9000/api/tasks
 {"name":"Hello", "id":1, "done":false}
-$ curl -X POST -d 'name=Hello2' http://localhost:8080/Todo/api/tasks
+$ curl -X POST -d 'name=Hello2' http://localhost:9000/api/tasks
 {"name":"Hello2", "id":2, "done":false}
 ```
 
 ```sh
-$ curl -X GET http://localhost:8080/Todo/api/tasks
+$ curl -X GET http://localhost:9000/api/tasks
 [{"name":"Hello", "id":1, "done":false}, {"name":"Hello2", "id":2, "done":false}]
 ```
 
 ```sh
-$ curl -X PUT -d 'done=true' http://localhost:8080/Todo/api/tasks/1
+$ curl -X PUT -d 'done=true' http://localhost:9000/api/tasks/1
 {"name":"Hello", "id":1, "done":true}
 ```
 
 ```sh
-$ curl -X GET http://localhost:8080/Todo/api/tasks
+$ curl -X GET http://localhost:9000/api/tasks
 [{"name":"Hello", "id":1, "done":true}, {"name":"Hello2", "id":2, "done":false}]
 ```
 
 ```sh
-$ curl -X DELETE http://localhost:8080/Todo/api/tasks/done
+$ curl -X DELETE http://localhost:9000/api/tasks/done
 ```
 
 ```sh
-$ curl -X GET http://localhost:8080/Todo/api/tasks
+$ curl -X GET http://localhost:9000/api/tasks
 [{"name":"Hello2", "id":2, "done":false}]
 ```
 
 ```sh
-$ curl -X DELETE http://localhost:8080/Todo/api/tasks
+$ curl -X DELETE http://localhost:9000/api/tasks
 ```
 
 ```sh
-$ curl -X GET http://localhost:8080/Todo/api/tasks
+$ curl -X GET http://localhost:9000/api/tasks
 []
 ```
 
