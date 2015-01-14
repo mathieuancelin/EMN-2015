@@ -9,7 +9,7 @@ Le projet contient déjà le minimum vital pour avoir une application qui foncti
 I. Partie Serveur
 --------------------------
 
-Premièrement, nous allons créer la couche de données de l'application. Pour celà créer une classe com.foo.bar.todo.models.Task.java
+Premièrement, nous allons créer la couche de données de l'application. Pour celà créer une classe models.Task.java
 
 ```java
 package models;
