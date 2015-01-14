@@ -30,13 +30,13 @@ Maintenant, il faut créer les services REST correspondant dans la class Applica
 
 Cette classe doit répondre au contrat suivant :
 
-* GET    /api/tasks       => récupération de toutes les instances de tâches
-* POST   /api/tasks       => création une nouvelle tâche 
-* PUT    /api/tasks/:id   => mise à jour d'une tâche
-* DELETE /api/tasks       => supression d'une tâche en particulier
-* DELETE /api/tasks/done  => supression des tâches finies
-* GET    /api/tasks/:id   => récupération d'une tâche
-* DELETE /api/tasks/:id   => suppression d'une tâche
+* GET    /api/tasks        => récupération de toutes les instances de tâches
+* POST   /api/tasks        => création une nouvelle tâche 
+* PUT    /api/tasks/{id}   => mise à jour d'une tâche
+* DELETE /api/tasks        => supression d'une tâche en particulier
+* DELETE /api/tasks/done   => supression des tâches finies
+* GET    /api/tasks/{id}   => récupération d'une tâche
+* DELETE /api/tasks/{id}   => suppression d'une tâche
 
 Voici un exemple de classe répondant à ce contrat
 
@@ -156,10 +156,10 @@ Voici le template html de l'application :
         </div>
         <div class="form-group">
           <div class="btn-group">
-            <button id="add" type="button" class="btn btn-success">
+            <button id="save" type="button" class="btn btn-success">
               <span class="glyphicon glyphicon-floppy-saved"></span>
             </button>
-            <button id="cleanup" type="button" class="btn btn-danger">
+            <button id="delete" type="button" class="btn btn-danger">
               <span class="glyphicon glyphicon-trash"></span>
             </button>
           </div>
@@ -187,12 +187,12 @@ Les différents cas à couvrir pas votre IHM sont les suivant :
 * Lors du clic sur le bouton 'Add', si le texte entré dans l'input text du formulaire n'est pas vide, créer une tâche (via le service REST approprié) et l'ajouter dans la liste de tâche.
 
 ```html
-<li className="list-group-item">
-    <div className="row">
-        <div className="col-md-10">
+<li class="list-group-item">
+    <div class="row">
+        <div class="col-md-10">
             <span>Nom de la tache</span>
         </div>
-        <div className="col-md-2">
+        <div class="col-md-2">
             <span class="label label-success">Done</span>
         </div>
     </div>
