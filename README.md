@@ -10,3 +10,8 @@ EMN 2015
 * [TP Todo Play2 starter kit](https://github.com/mathieuancelin/EMN-2015/raw/master/todoscala.zip)
 * [TP KittenMash Play2 starter kit](https://github.com/mathieuancelin/EMN-2015/raw/master/kittenmash.zip)
 
+Solutions
+
+* [TP Todo Play1](https://github.com/mathieuancelin/EMN-2015/raw/master/solutions/todo-play1.zip)
+* [TP Todo Play2](https://github.com/mathieuancelin/EMN-2015/raw/master/solutions/todo-play2.zip)
+* [TP KittenMash Play2](https://github.com/mathieuancelin/EMN-2015/raw/master/solutions/kittenmash.zip)
